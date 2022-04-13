@@ -1,0 +1,20 @@
+{
+  "itemGroup.reindustry": "Reindustry",
+
+  "block.reindustry.deepslate_tin_ore": "Оловянносный глубинный сланец",
+
+  "block.reindustry.tin_ore": "Оловянная руда",
+
+  "item.reindustry.tin_raw": "Рудное олово",
+
+  "item.reindustry.tin_ingot": "Слиток олова",
+  "item.reindustry.bronze_ingot": "Слиток бронзы",
+
+  "item.reindustry.tin_plate": "Оловянная пластина",
+  "item.reindustry.iron_plate": "Железная пластина",
+  "item.reindustry.copper_plate": "Медная пластина",
+  "item.reindustry.gold_plate": "Золотая пластина",
+  "item.reindustry.bronze_plate": "Бронзовая пластина",
+
+  "item.reindustry.hammer": "Молот"
+}

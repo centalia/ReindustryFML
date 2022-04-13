@@ -1,0 +1,20 @@
+{
+  "itemGroup.reindustry": "Reindustry",
+
+  "block.reindustry.deepslate_tin_ore": "Deepslate Tin Ore",
+
+  "block.reindustry.tin_ore": "Tin Ore",
+
+  "item.reindustry.tin_raw": "Raw Tin Ore",
+
+  "item.reindustry.tin_ingot": "Tin Ingot",
+  "item.reindustry.bronze_ingot": "Bronze Ingot",
+
+  "item.reindustry.tin_plate": "Tin Plate",
+  "item.reindustry.iron_plate": "Iron Plate",
+  "item.reindustry.copper_plate": "Copper Plate",
+  "item.reindustry.gold_plate": "Gold Plate",
+  "item.reindustry.bronze_plate": "Bronze Plate",
+
+  "item.reindustry.hammer": "Hammer"
+}

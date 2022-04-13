@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "H",
+    "T",
+    "T"
+  ],
+  "key": {
+    "H": {
+      "item": "reindustry:hammer",
+      "data": 32767
+    },
+    "T": {
+      "item": "minecraft:gold_ingot",
+      "data": 32767
+    }
+  },
+  "result": {
+    "item": "reindustry:gold_plate",
+    "count": 1
+  }
+}

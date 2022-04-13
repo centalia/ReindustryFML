@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CC",
+    "CT"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "T": {
+      "item": "reindustry:tin_ingot"
+    }
+  },
+  "result": {
+    "item": "reindustry:bronze_ingot",
+    "count": 4
+  }
+}
