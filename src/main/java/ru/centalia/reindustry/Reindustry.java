@@ -14,10 +14,9 @@ import java.util.Random;
 import static ru.centalia.reindustry.Reindustry.*;
 import static ru.centalia.reindustry.items.Items.*;
 import static ru.centalia.reindustry.blocks.Blocks.*;
-import static ru.centalia.reindustry.items.IC2Hammer.*;
+import static ru.centalia.reindustry.items.IC2Tool.*;
 
 @Mod(id)
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class Reindustry
 {
     private static final Logger LOGGER = LogManager.getLogger();
@@ -33,12 +32,13 @@ public class Reindustry
     public Reindustry(){
         LOGGER.debug("Welcome to the HELL");
 
-        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-        INGOTS.register(bus);
-        PLATES.register(bus);
-        ORE.register(bus);
-        RAW_ORE.register(bus);
-        BLOCKITEMS.register(bus);
-        HAMMER.register(bus);
+        IEventBus init = FMLJavaModLoadingContext.get().getModEventBus();
+        INGOTS.register(init);
+        PLATES.register(init);
+        ORE.register(init);
+        RAW_ORE.register(init);
+        BLOCKITEMS.register(init);
+        TOOL.register(init);
+        CABLE.register(init);
     }
 }

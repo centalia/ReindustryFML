@@ -2,17 +2,15 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "H",
-    "T",
-    "T"
+    "I",
+    "I"
   ],
   "key": {
     "H": {
-      "item": "reindustry:hammer",
-      "data": 32767
+      "item": "reindustry:forge_hammer"
     },
-    "T": {
-      "item": "minecraft:gold_ingot",
-      "data": 32767
+    "I": {
+      "item": "minecraft:gold_ingot"
     }
   },
   "result": {

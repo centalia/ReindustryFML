@@ -1,6 +1,6 @@
 {
   "parent":"item/generated",
   "textures": {
-    "layer0": "reindustry:item/hammer"
+    "layer0": "reindustry:item/copper_cable"
   }
 }

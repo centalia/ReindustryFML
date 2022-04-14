@@ -16,5 +16,8 @@
   "item.reindustry.gold_plate": "Gold Plate",
   "item.reindustry.bronze_plate": "Bronze Plate",
 
-  "item.reindustry.hammer": "Hammer"
+  "item.reindustry.forge_hammer": "Hammer",
+  "item.reindustry.cutter": "Cutter",
+
+  "item.reindustry.copper_cable": "Copper Cable"
 }

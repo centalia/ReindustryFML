@@ -16,6 +16,17 @@ public class Blocks {
 
     public static final DeferredRegister<Block> ORE = DeferredRegister.create(ForgeRegistries.BLOCKS, id);
 
-    public static final RegistryObject<Block> TIN_ORE = ORE.register("tin_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).requiresCorrectToolForDrops().strength(3f, 3f)));
-    public static final RegistryObject<Block> DEEPSLATE_TIN_ORE = ORE.register("deepslate_tin_ore", () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE).color(MaterialColor.DEEPSLATE).strength(3f, 4.5f).sound(SoundType.DEEPSLATE)));
+    public static final RegistryObject<Block> TIN_ORE = ORE.register("tin_ore",
+        () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
+            .requiresCorrectToolForDrops()
+            .strength(3f, 3f)
+        )
+    );
+    public static final RegistryObject<Block> DEEPSLATE_TIN_ORE = ORE.register("deepslate_tin_ore",
+        () -> new OreBlock(BlockBehaviour.Properties.of(Material.STONE)
+            .color(MaterialColor.DEEPSLATE)
+            .strength(3f, 4.5f)
+            .sound(SoundType.DEEPSLATE)
+        )
+    );
 }

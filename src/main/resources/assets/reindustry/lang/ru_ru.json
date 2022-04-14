@@ -16,5 +16,8 @@
   "item.reindustry.gold_plate": "Золотая пластина",
   "item.reindustry.bronze_plate": "Бронзовая пластина",
 
-  "item.reindustry.hammer": "Молот"
+  "item.reindustry.forge_hammer": "Молот",
+  "item.reindustry.cutter": "Кусачки",
+
+  "item.reindustry.copper_cable": "Медный кабель"
 }

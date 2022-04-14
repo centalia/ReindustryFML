@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "CP"
+  ],
+  "key": {
+    "C": {
+      "item": "reindustry:cutter"
+    },
+    "P": {
+      "item": "reindustry:copper_plate"
+    }
+  },
+  "result": {
+    "item": "reindustry:copper_cable",
+    "count": 2
+  }
+}
