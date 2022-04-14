@@ -13,8 +13,7 @@ import java.util.Random;
 
 import static ru.centalia.reindustry.Reindustry.*;
 import static ru.centalia.reindustry.items.Items.*;
-import static ru.centalia.reindustry.blocks.Blocks.*;
-import static ru.centalia.reindustry.items.IC2Tool.*;
+import static ru.centalia.reindustry.blocks.ReindBlocks.*;
 
 @Mod(id)
 public class Reindustry

@@ -5,7 +5,7 @@ import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import ru.centalia.reindustry.blocks.Blocks;
+import ru.centalia.reindustry.blocks.ReindBlocks;
 
 import static ru.centalia.reindustry.Config.ironDurability;
 import static ru.centalia.reindustry.Reindustry.*;
@@ -32,13 +32,13 @@ public class Items {
 
    public static final DeferredRegister<Item> BLOCKITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, id);
    public static final RegistryObject<Item> TIN_ORE = BLOCKITEMS.register("tin_ore",
-            () -> new BlockItem(Blocks.TIN_ORE.get(),
+            () -> new BlockItem(ReindBlocks.TIN_ORE.get(),
                   new Item.Properties()
                      .tab(REINDUSTRY)
             )
    );
    public static final RegistryObject<Item> DEEPSLATE_TIN_ORE = BLOCKITEMS.register("deepslate_tin_ore",
-            () -> new BlockItem(Blocks.DEEPSLATE_TIN_ORE.get(),
+            () -> new BlockItem(ReindBlocks.DEEPSLATE_TIN_ORE.get(),
                   new Item.Properties()
                      .tab(REINDUSTRY)
             )

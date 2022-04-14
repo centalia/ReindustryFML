@@ -1,6 +1,7 @@
 package ru.centalia.reindustry.blocks;
 
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.OreBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -12,7 +13,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import static ru.centalia.reindustry.Reindustry.*;
 
-public class Blocks {
+public class ReindBlocks {
 
     public static final DeferredRegister<Block> ORE = DeferredRegister.create(ForgeRegistries.BLOCKS, id);
 
@@ -28,5 +29,11 @@ public class Blocks {
             .strength(3f, 4.5f)
             .sound(SoundType.DEEPSLATE)
         )
+    );
+
+    public static final DeferredRegister<Block> BLOCK = DeferredRegister.create(ForgeRegistries.BLOCKS, id);
+    public static final RegistryObject<Block> GENERATOR = BLOCK.register("generator",
+            () -> new GenBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+            )
     );
 }
