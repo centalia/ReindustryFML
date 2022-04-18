@@ -8,12 +8,16 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ru.centalia.reindustry.items.Armor;
+import ru.centalia.reindustry.items.Items;
+import ru.centalia.reindustry.items.Tool;
 
 import java.util.Random;
 
 import static ru.centalia.reindustry.Reindustry.*;
-import static ru.centalia.reindustry.items.Items.*;
-import static ru.centalia.reindustry.blocks.ReindBlocks.*;
+import static ru.centalia.reindustry.blocks.BlockItems.*;
+import static ru.centalia.reindustry.blocks.Blocks.*;
+
 
 @Mod(id)
 public class Reindustry
@@ -32,12 +36,11 @@ public class Reindustry
         LOGGER.debug("Welcome to the HELL");
 
         IEventBus init = FMLJavaModLoadingContext.get().getModEventBus();
-        INGOTS.register(init);
-        PLATES.register(init);
         ORE.register(init);
         RAW_ORE.register(init);
+        Items.register(init);
         BLOCKITEMS.register(init);
-        TOOL.register(init);
-        CABLE.register(init);
+        Tool.register(init);
+        Armor.register(init);
     }
 }

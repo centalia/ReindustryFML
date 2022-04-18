@@ -1,23 +1,28 @@
 {
   "itemGroup.reindustry": "Reindustry",
 
+  "item.reindustry.copper_cable": "Медный кабель",
+  "item.reindustry.copper_plate": "Медная пластина",
+
   "block.reindustry.deepslate_tin_ore": "Оловянносный глубинный сланец",
-
   "block.reindustry.tin_ore": "Оловянная руда",
-
   "item.reindustry.tin_raw": "Рудное олово",
-
   "item.reindustry.tin_ingot": "Слиток олова",
-  "item.reindustry.bronze_ingot": "Слиток бронзы",
 
   "item.reindustry.tin_plate": "Оловянная пластина",
   "item.reindustry.iron_plate": "Железная пластина",
-  "item.reindustry.copper_plate": "Медная пластина",
   "item.reindustry.gold_plate": "Золотая пластина",
-  "item.reindustry.bronze_plate": "Бронзовая пластина",
 
   "item.reindustry.forge_hammer": "Молот",
   "item.reindustry.cutter": "Кусачки",
 
-  "item.reindustry.copper_cable": "Медный кабель"
+  "item.reindustry.bronze_ingot": "Слиток бронзы",
+  "item.reindustry.bronze_plate": "Бронзовая пластина",
+  "item.reindustry.bronze_axe": "Бронзовая топор",
+  "item.reindustry.bronze_pickaxe": "Бронзовая кирка",
+  "item.reindustry.bronze_hoe": "Бронзовая мотыга",
+  "item.reindustry.bronze_shovel": "Бронзовая лопата",
+  "item.reindustry.bronze_sword": "Бронзовый меч",
+  "item.reindustry.bronze_cutter": "Бронзоваые кусачки",
+  "item.reindustry.bronze_forge_hammer": "Бронзовый кузнечный молот"
 }

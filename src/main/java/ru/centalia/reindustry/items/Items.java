@@ -1,77 +1,61 @@
 package ru.centalia.reindustry.items;
 
-import net.minecraft.world.item.BlockItem;
+import net.minecraft.core.Registry;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import ru.centalia.reindustry.blocks.ReindBlocks;
 
 import static ru.centalia.reindustry.Config.ironDurability;
 import static ru.centalia.reindustry.Reindustry.*;
 
-public class Items {
-   public static final DeferredRegister<Item> INGOTS = DeferredRegister.create(ForgeRegistries.ITEMS, id);
-   public static final RegistryObject<Item> TIN_INGOT = INGOTS.register("tin_ingot",
+public class Items extends Armor {
+   public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, id);
+   public static final RegistryObject<Item> TIN_INGOT = ITEMS.register("tin_ingot",
             () -> new Item(new Item.Properties()
                .tab(REINDUSTRY)
             )
    );
-   public static final RegistryObject<Item> BRONZE_INGOT = INGOTS.register("bronze_ingot",
+   public static final RegistryObject<Item> BRONZE_INGOT = ITEMS.register("bronze_ingot",
             () -> new Item(new Item.Properties()
                .tab(REINDUSTRY)
             )
    );
+   public static final RegistryObject<Item> TIN_PLATE = ITEMS.register("tin_plate",
+            () -> new Item(new Item.Properties()
+                     .tab(REINDUSTRY)
+            )
+   );
+   public static final RegistryObject<Item> IRON_PLATE = ITEMS.register("iron_plate",
+            () -> new Item(new Item.Properties()
+                     .tab(REINDUSTRY)
+            )
+   );
+   public static final RegistryObject<Item> COPPER_PLATE = ITEMS.register("copper_plate",
+            () -> new Item(new Item.Properties()
+                     .tab(REINDUSTRY)
+            )
+   );
+   public static final RegistryObject<Item> GOLD_PLATE = ITEMS.register("gold_plate",
+            () -> new Item(new Item.Properties()
+                     .tab(REINDUSTRY)
+            )
+   );
+   public static final RegistryObject<Item> BRONZE_PLATE = ITEMS.register("bronze_plate",
+            () -> new Item(new Item.Properties()
+                     .tab(REINDUSTRY)
+            )
+   );
+    public static final RegistryObject<Item> COPPER_CABLE = ITEMS.register("copper_cable",
+            () -> new Item(new Item.Properties()
+                    .tab(REINDUSTRY)
+            )
+    );
 
-   public static final DeferredRegister<Item> RAW_ORE = DeferredRegister.create(ForgeRegistries.ITEMS, id);
-   public static final RegistryObject<Item> RAW_TIN_ORE = RAW_ORE.register("tin_raw",
-            () -> new Item(new Item.Properties()
-               .tab(REINDUSTRY)
-            )
-   );
-
-   public static final DeferredRegister<Item> BLOCKITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, id);
-   public static final RegistryObject<Item> TIN_ORE = BLOCKITEMS.register("tin_ore",
-            () -> new BlockItem(ReindBlocks.TIN_ORE.get(),
-                  new Item.Properties()
-                     .tab(REINDUSTRY)
-            )
-   );
-   public static final RegistryObject<Item> DEEPSLATE_TIN_ORE = BLOCKITEMS.register("deepslate_tin_ore",
-            () -> new BlockItem(ReindBlocks.DEEPSLATE_TIN_ORE.get(),
-                  new Item.Properties()
-                     .tab(REINDUSTRY)
-            )
-   );
-
-   public static final DeferredRegister<Item> PLATES = DeferredRegister.create(ForgeRegistries.ITEMS, id);
-   public static final RegistryObject<Item> TIN_PLATE = PLATES.register("tin_plate",
-            () -> new Item(new Item.Properties()
-                     .tab(REINDUSTRY)
-            )
-   );
-   public static final RegistryObject<Item> IRON_PLATE = PLATES.register("iron_plate",
-            () -> new Item(new Item.Properties()
-                     .tab(REINDUSTRY)
-            )
-   );
-   public static final RegistryObject<Item> COPPER_PLATE = PLATES.register("copper_plate",
-            () -> new Item(new Item.Properties()
-                     .tab(REINDUSTRY)
-            )
-   );
-   public static final RegistryObject<Item> GOLD_PLATE = PLATES.register("gold_plate",
-            () -> new Item(new Item.Properties()
-                     .tab(REINDUSTRY)
-            )
-   );
-   public static final RegistryObject<Item> BRONZE_PLATE = PLATES.register("bronze_plate",
-            () -> new Item(new Item.Properties()
-                     .tab(REINDUSTRY)
-            )
-   );
-
-   public static final DeferredRegister<Item> TOOL = DeferredRegister.create(ForgeRegistries.ITEMS, id);
+    public static final DeferredRegister<Item> TOOL = DeferredRegister.create(ForgeRegistries.ITEMS, id);
    public static final RegistryObject<Item> FORGE_HAMMER = TOOL.register("forge_hammer",
             () -> new IC2Tool(new Item.Properties()
                      .setNoRepair()
@@ -87,11 +71,10 @@ public class Items {
       )
    );
 
-   public static final DeferredRegister<Item> CABLE = DeferredRegister.create(ForgeRegistries.ITEMS, id);
-   public static final RegistryObject<Item> COPPER_CABLE = CABLE.register("copper_cable",
-            () -> new Item(new Item.Properties()
-                     .tab(REINDUSTRY)
-            )
-   );
 
+
+   public static void register(IEventBus init){
+       ITEMS.register(init);
+       TOOL.register(init);
+   }
 }

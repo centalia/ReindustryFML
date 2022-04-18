@@ -19,5 +19,13 @@
   "item.reindustry.forge_hammer": "Hammer",
   "item.reindustry.cutter": "Cutter",
 
-  "item.reindustry.copper_cable": "Copper Cable"
+  "item.reindustry.copper_cable": "Copper Cable",
+
+  "item.reindustry.bronze_axe": "Bronze Axe",
+  "item.reindustry.bronze_pickaxe": "Bronze Pickaxe",
+  "item.reindustry.bronze_hoe": "Bronze Hoe",
+  "item.reindustry.bronze_shovel": "Bronze Shovel",
+  "item.reindustry.bronze_sword": "Bronze Sword",
+  "item.reindustry.bronze_cutter": "Bronze Cutter",
+  "item.reindustry.bronze_forge_hammer": "Bronze Forge Hammer"
 }
