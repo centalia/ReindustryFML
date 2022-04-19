@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "H",
+    "D"
+  ],
+  "key": {
+    "H": {
+      "item": "reindustry:forge_hammer"
+    },
+    "D": {
+      "item": "minecraft:raw_copper"
+    }
+  },
+  "result": {
+    "item": "reindustry:copper_dust",
+    "count": 1
+  }
+}

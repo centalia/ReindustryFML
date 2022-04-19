@@ -6,14 +6,14 @@
   ],
   "key": {
     "C": {
-      "item": "minecraft:copper_ingot"
+      "item": "reindustry:copper_dust"
     },
     "T": {
-      "item": "reindustry:tin_ingot"
+      "item": "reindustry:tin_dust"
     }
   },
   "result": {
-    "item": "reindustry:bronze_ingot",
-    "count": 4
+    "item": "reindustry:bronze_dust",
+    "count": 3
   }
 }

@@ -54,6 +54,24 @@ public class Items extends Armor {
                     .tab(REINDUSTRY)
             )
     );
+    public static final RegistryObject<Item> COPPER_DUST = ITEMS.register("copper_dust",
+            () -> new Item(new Item.Properties()
+                    .tab(REINDUSTRY)
+            )
+    );
+
+    public static final RegistryObject<Item> TIN_DUST = ITEMS.register("tin_dust",
+            () -> new Item(new Item.Properties()
+                    .tab(REINDUSTRY)
+            )
+    );
+
+    public static final RegistryObject<Item> BRONZE_DUST = ITEMS.register("bronze_dust",
+            () -> new Item(new Item.Properties()
+                    .tab(REINDUSTRY)
+            )
+    );
+
 
     public static final DeferredRegister<Item> TOOL = DeferredRegister.create(ForgeRegistries.ITEMS, id);
    public static final RegistryObject<Item> FORGE_HAMMER = TOOL.register("forge_hammer",

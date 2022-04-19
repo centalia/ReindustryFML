@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "H",
+    "D"
+  ],
+  "key": {
+    "H": {
+      "item": "reindustry:forge_hammer"
+    },
+    "D": {
+      "item": "reindustry:tin_raw"
+    }
+  },
+  "result": {
+    "item": "reindustry:tin_dust",
+    "count": 1
+  }
+}

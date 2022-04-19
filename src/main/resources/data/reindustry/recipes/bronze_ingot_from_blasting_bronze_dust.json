@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:blasting",
+  "group": "bronze_ingot",
+  "ingredient": {
+    "item": "reindustry:bronze_dust"
+  },
+  "result": "reindustry:bronze_ingot",
+  "experience": 0.7,
+  "cookingtime": 200
+}
