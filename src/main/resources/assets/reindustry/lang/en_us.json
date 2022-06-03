@@ -27,5 +27,7 @@
   "item.reindustry.bronze_shovel": "Bronze Shovel",
   "item.reindustry.bronze_sword": "Bronze Sword",
   "item.reindustry.bronze_cutter": "Bronze Cutter",
-  "item.reindustry.bronze_forge_hammer": "Bronze Forge Hammer"
+  "item.reindustry.bronze_forge_hammer": "Bronze Forge Hammer",
+
+  "tooltip.reindustry.IC2Tool": "Durability: %s"
 }

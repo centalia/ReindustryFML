@@ -11,10 +11,11 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import ru.centalia.reindustry.blocks.entities.custom.MaceratorBlock;
 
 import static ru.centalia.reindustry.Reindustry.*;
 
-public class Blocks {
+public class ReindBlocks {
 
     public static final DeferredRegister<Block> ORE = DeferredRegister.create(ForgeRegistries.BLOCKS, id);
     public static final RegistryObject<Block> TIN_ORE = ORE.register("tin_ore",
@@ -36,4 +37,14 @@ public class Blocks {
                     .tab(REINDUSTRY)
             )
     );
+
+    public static final DeferredRegister<Block> BLOCK = DeferredRegister.create(ForgeRegistries.BLOCKS, id);
+    public static final RegistryObject<Block> MACERATOR = BLOCK.register("macerator",
+            () -> new MaceratorBlock(BlockBehaviour.Properties.of(Material.METAL)));
+
+    public static void register(IEventBus init) {
+        ORE.register(init);
+        RAW_ORE.register(init);
+        BLOCK.register(init);
+    }
 }

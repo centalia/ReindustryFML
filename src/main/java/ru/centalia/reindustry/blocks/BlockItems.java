@@ -13,15 +13,19 @@ import static ru.centalia.reindustry.Reindustry.id;
 public class BlockItems {
     public static final DeferredRegister<Item> BLOCKITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, id);
     public static final RegistryObject<Item> TIN_ORE = BLOCKITEMS.register("tin_ore",
-            () -> new BlockItem(Blocks.TIN_ORE.get(),
+            () -> new BlockItem(ReindBlocks.TIN_ORE.get(),
                     new Item.Properties()
                             .tab(REINDUSTRY)
             )
     );
     public static final RegistryObject<Item> DEEPSLATE_TIN_ORE = BLOCKITEMS.register("deepslate_tin_ore",
-            () -> new BlockItem(Blocks.DEEPSLATE_TIN_ORE.get(),
+            () -> new BlockItem(ReindBlocks.DEEPSLATE_TIN_ORE.get(),
                     new Item.Properties()
                             .tab(REINDUSTRY)
             )
     );
+
+    public static void register(IEventBus init) {
+        BLOCKITEMS.register(init);
+    }
 }

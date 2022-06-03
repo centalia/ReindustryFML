@@ -24,5 +24,7 @@
   "item.reindustry.bronze_shovel": "Бронзовая лопата",
   "item.reindustry.bronze_sword": "Бронзовый меч",
   "item.reindustry.bronze_cutter": "Бронзоваые кусачки",
-  "item.reindustry.bronze_forge_hammer": "Бронзовый кузнечный молот"
+  "item.reindustry.bronze_forge_hammer": "Бронзовый кузнечный молот",
+
+  "tooltip.reindustry.IC2Tool": "Прочность: %s"
 }
