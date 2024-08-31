@@ -8,12 +8,11 @@ import net.minecraftforge.network.IContainerFactory;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import ru.centalia.reindustry.Reindustry;
 
 public class MenuTypes {
 
     public static final DeferredRegister<MenuType<?>> MENUS =
-            DeferredRegister.create(ForgeRegistries.CONTAINERS, Reindustry.id);
+            DeferredRegister.create(ForgeRegistries.CONTAINERS, old_Reindustry.id);
 
     private static <T extends AbstractContainerMenu>RegistryObject<MenuType<T>>registryMenusType(IContainerFactory<T> factory,
                                                                                 String name){

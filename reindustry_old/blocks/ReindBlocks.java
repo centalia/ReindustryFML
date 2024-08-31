@@ -13,7 +13,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import ru.centalia.reindustry.blocks.entities.custom.MaceratorBlock;
 
-import static ru.centalia.reindustry.Reindustry.*;
+import static ru.centalia.reindustry.old_Reindustry.*;
 
 public class ReindBlocks {
 

@@ -5,12 +5,11 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.crafting.Ingredient;
-import ru.centalia.reindustry.Reindustry;
 
 import java.util.function.Supplier;
 
 public enum ArmTiers implements ArmorMaterial {
-    BRONZE(1, new int[] {100,90,80,70}, new int[] {20,20,20,20},3.2f,1.85f, Reindustry.id + ":bronze", SoundEvents.ARMOR_EQUIP_IRON,
+    BRONZE(1, new int[] {100,90,80,70}, new int[] {20,20,20,20},3.2f,1.85f, old_Reindustry.id + ":bronze", SoundEvents.ARMOR_EQUIP_IRON,
             () -> Ingredient.of(Items.BRONZE_INGOT.get()));
     private final int enchant;
     private final int[] durability, damageReditions;

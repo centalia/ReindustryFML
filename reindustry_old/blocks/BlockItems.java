@@ -7,8 +7,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import static ru.centalia.reindustry.Reindustry.REINDUSTRY;
-import static ru.centalia.reindustry.Reindustry.id;
+import static ru.centalia.reindustry.old_Reindustry.REINDUSTRY;
+import static ru.centalia.reindustry.old_Reindustry.id;
 
 public class BlockItems {
     public static final DeferredRegister<Item> BLOCKITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, id);

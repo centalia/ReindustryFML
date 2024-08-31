@@ -7,11 +7,10 @@ import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
-import ru.centalia.reindustry.Reindustry;
 
 public class MaceratorScreen extends AbstractContainerScreen<MaceratorMenu> {
     private static final ResourceLocation TEXTURE =
-            new ResourceLocation(Reindustry.id, "textures/gui/macerator_gui.png");
+            new ResourceLocation(old_Reindustry.id, "textures/gui/macerator_gui.png");
 
     public MaceratorScreen(MaceratorMenu menu, Inventory inv, Component component) {
         super(menu, inv, component);

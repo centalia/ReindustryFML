@@ -1,8 +1,5 @@
 package ru.centalia.reindustry.items;
 
-import net.minecraft.core.Registry;
-import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -10,7 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 import static ru.centalia.reindustry.Config.ironDurability;
-import static ru.centalia.reindustry.Reindustry.*;
+import static ru.centalia.reindustry.old_Reindustry.*;
 
 public class Items extends Armor {
    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, id);

@@ -5,14 +5,13 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import ru.centalia.reindustry.Reindustry;
 import ru.centalia.reindustry.blocks.ReindBlocks;
 import ru.centalia.reindustry.blocks.entities.custom.MaceratorBlockEntities;
 
 public class BlockEntities {
 
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
-        DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, Reindustry.id);
+        DeferredRegister.create(ForgeRegistries.BLOCK_ENTITIES, old_Reindustry.id);
 
     public static final RegistryObject<BlockEntityType<MaceratorBlockEntities>> MACERATOR =
             BLOCK_ENTITIES.register("macerator_block_entity", () ->

@@ -8,7 +8,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-import static ru.centalia.reindustry.Reindustry.*;
+import static ru.centalia.reindustry.old_Reindustry.*;
 public class Armor {
     public static final DeferredRegister<Item> ARMOR = DeferredRegister.create(ForgeRegistries.ITEMS, id);
 
