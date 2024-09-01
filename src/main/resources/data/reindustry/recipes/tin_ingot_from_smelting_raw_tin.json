@@ -1,10 +1,15 @@
 {
   "type": "minecraft:smelting",
-  "group": "tin_ingot",
-  "ingredient": {
-    "item": "reindustry:tin_raw"
-  },
-  "result": "reindustry:tin_ingot",
+  "category": "misc",
+  "cookingtime": 100,
   "experience": 0.7,
-  "cookingtime": 200
+  "group": "tin",
+
+  "ingredient": {
+    "item": "reindustry:raw_tin"
+  },
+
+  "result":{
+    "id": "reindustry:tin_ingot"
+  }
 }
