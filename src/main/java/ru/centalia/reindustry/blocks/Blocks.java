@@ -2,9 +2,11 @@ package ru.centalia.reindustry.blocks;
 
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -21,15 +23,15 @@ public class Blocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, Reindustry.MOD_ID);
 
     public static final RegistryObject<Block> TIN_ORE = register("tin_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new DropExperienceBlock(UniformInt.of(2,4), BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()
                     .strength(3f, 3f)
             ));
 
     public static final RegistryObject<Block> DEEPSLATE_TIN_ORE = register("deepslate_tin_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
+            () -> new DropExperienceBlock(UniformInt.of(3,6), BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()
-                    .strength(3f, 3f)
+                    .strength(6f, 6f)
             ));
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> block ){
